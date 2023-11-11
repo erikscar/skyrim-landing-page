@@ -31,7 +31,6 @@ a {
 
 .hero_foreground {
   padding: 0 35vh;
-  text-align: center;
 }
 
 .section{
@@ -80,6 +79,7 @@ a {
 }
 
 .city_image {
+  width: 100%;
   border-radius: 2rem;
   box-shadow: .25rem .25rem 2rem .7rem hsl(280, 5%, 30%);
 }
@@ -210,5 +210,38 @@ a {
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@media(max-width: 1440px) {
+  .introduction_image {
+    margin-top: 3rem;
+  }
+  .section_paragraph {
+    line-height: 1.5rem;
+  }
+
+  .dragonborn_image,
+  .dragon_image {
+    width: 35%;
+    height: 18rem;
+  }
+
+  @keyframes dragonborn {
+    0% {
+      transform: translateX(170px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes dragon {
+    0% {
+      transform: translateX(-170px)
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
 }
