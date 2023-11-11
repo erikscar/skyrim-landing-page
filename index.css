@@ -16,7 +16,7 @@ a {
 
 .hero {
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), hsl(280, 5%, 11%));
+  background: linear-gradient(rgba(0, 0, 0, 0.6), hsl(280, 5%, 11%));
   min-height: 100vh;
 }
 
@@ -31,6 +31,9 @@ a {
 
 .hero_foreground {
   padding: 0 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center
 }
 
 .section{
@@ -50,6 +53,11 @@ a {
   letter-spacing: 1rem;
   font-size: 4rem;
   color: #fff;
+}
+
+.main_section_title {
+  position: absolute;
+  margin-top: 75vh;
 }
 
 .section_title {
@@ -214,9 +222,6 @@ a {
 }
 
 @media(max-width: 1440px) {
-  .introduction_image {
-    margin-top: 3rem;
-  }
   .section_paragraph {
     line-height: 1.5rem;
   }
